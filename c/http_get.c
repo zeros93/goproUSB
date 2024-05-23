@@ -31,7 +31,7 @@ int main(void) {
 
     curl = curl_easy_init();
     if(curl) {
-        curl_easy_setopt(curl, CURLOPT_URL, "http://172.27.199.51:8080/gopro/camera/get_date_time");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://172.27.199.51:8080/gopro/camera/state");
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
 
