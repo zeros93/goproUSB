@@ -91,6 +91,20 @@ url = base_url + "/gopro/camera/presets/get"
 response = requests.request("GET", url)
 print(response.text)
 
+# Load Preset by ID
+print("Load Preset by ID")
+url = base_url + "/gopro/camera/presets/load"
+querystring = {"id":"0"}
+response = requests.request("GET", url, params=querystring)
+print(response)
+
+# Load Preset Group by ID
+print("Load Preset Group by ID")
+url = base_url + "/gopro/camera/presets/set_group"
+querystring = {"id":"1001"}
+response = requests.request("GET", url, params=querystring)
+print(response)
+
 # Get Camera State
 print("Get Camera State")
 url = base_url + "/gopro/camera/state"

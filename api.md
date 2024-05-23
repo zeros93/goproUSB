@@ -271,8 +271,32 @@ print(response.text)
 ```
 
 ### Load Preset by ID
+    method: GET
+    url: `/gopro/camera/presets/load`
+    parameters: id
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/presets/load"
+querystring = {"id":"0"}
+requests.request("GET", url, params=querystring)
+```
 
 ### Load Preset Group by ID
+    method: GET
+    url: `/gopro/camera/presets/set_group`
+    parameters: id [1000-1002]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/presets/set_group"
+querystring = {"id":"1001"}
+requests.request("GET", url, params=querystring)
+```
 
 ### Update Custom Preset
 HERO 12 Black only
