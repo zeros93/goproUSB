@@ -425,4 +425,296 @@ url = "http://172.27.199.51:8080/gopro/camera/setting?setting=83&option=1"
 requests.request("GET", url)
 ```
 
+### HindSight (167)
+HERO 9/10/11/12 Black only
+
+    method: GET
+    url: `/gopro/camera/setting?setting=167`
+    parameters:
+        setting: 167
+        option: [2, 3, 4]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=167&option=2"
+requests.request("GET", url)
+```
+
+### Hypersmooth (135)
+    method: GET
+    url: `/gopro/camera/setting?setting=135`
+    parameters:
+        setting: 135
+        option: [0-4, 100]
+    Responses: 403
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=135&option=2"
+requests.request("GET", url)
+```
+
+### Lapse Mode (187)
+HERO 12 Black only
+
+### Max Lens (162)
+HERO 9/10/11 Black only
+
+    method: GET
+    url: `/gopro/camera/setting?setting=162`
+    parameters:
+        setting: 162
+        option: [0, 1]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=162&option=0"
+requests.request("GET", url)
+```
+
+### Max Lens Mod (189)
+HERO 12 Black only
+
+### Max Lens Mod Enable (190)
+HERO 12 Black only
+
+### Media Format (128)
+HERO 9/10/11/12 Black only
+
+    method: GET
+    url: `/gopro/camera/setting?setting=128`
+    parameters:
+        setting: 128
+        option: [13, 20, 21, 26]
+    Responses: 403
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=128&option=13"
+requests.request("GET", url)
+```
+
+### Multi Shot Aspect Ratio (192)
+HERO 12 Black only
+
+### Photo Horizon Leveling (151)
+HERO 11 Black only
+
+### Photo Interval Duration (172)
+HERO 12 Black only
+
+### Photo Lens (122)
+HERO 9/10/11/12 Black only
+
+    method: GET
+    url: `/gopro/camera/setting?setting=122`
+    parameters:
+        setting: 122
+        option: [19, 100-102]
+    Responses: 403
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=122&option=100"
+requests.request("GET", url)
+```
+
+### Photo Mode (191)
+HERO 12 Black only
+
+### Photo Single Interval (171)
+HERO 12 Black only
+
+### Profiles (184)
+HERO 12 Black only
+
+### Setup Anti-Flicker (134)
+    method: GET
+    url: `/gopro/camera/setting?setting=134`
+    parameters:
+        setting: 134
+        option: [2, 3]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=134&option=2"
+requests.request("GET", url)
+```
+
+### System Video Mode (180)
+HERO 11 Black only
+
+### Time Lapse Digital Lenses (123)
+HERO 9/10/11/12 Black only
+
+    method: GET
+    url: `/gopro/camera/setting?setting=123`
+    parameters:
+        setting: 123
+        option: [19, 100-102]
+    Responses: 403
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=123&option=101"
+requests.request("GET", url)
+```
+
+### Trail Length (179)
+HERO 11/12 Black only
+
+### Video Aspect Ratio (108)
+HERO 12 Black only
+
+### Video Bit Rate (182)
+HERO 12 Black only
+
+### Video Easy Mode (186)
+HERO 12 Black only
+
+### Video Horizon Leveling (150)
+HERO 11 Black only
+
+### Video Lens (121)
+    method: GET
+    url: `/gopro/camera/setting?setting=121`
+    parameters:
+        setting: 121
+        option: [0, 2-4, 7-11]
+    Responses: 403
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=121&option=7"
+requests.request("GET", url)
+```
+
+### Video Performance Mode (173)
+HERO 10 Black only
+
+### Video Resolution (2)
+    method: GET
+    url: `/gopro/camera/setting?setting=2`
+    parameters:
+        setting: 2
+        option: [1, 4, 6, 7, 9, 18, 24-28, 100, 107-111]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=2&option=24"
+requests.request("GET", url)
+```
+
+### Webcam Digital Lenses (43)
+    method: GET
+    url: `/gopro/camera/setting?setting=43`
+    parameters:
+        setting: 43
+        option: [0, 2-4]
+    Responses: 500
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/camera/setting?setting=43&option=3"
+requests.request("GET", url)
+```
+
+### Wireless Band (178)
+HERO 11/12 Black only
+
+## Webcam
+
+### Enter Webcam Preview
+    method: GET
+    url: `/gopro/webcam/preview`
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/preview"
+requests.request("GET", url)
+```
+
+### Exit Webcam Mode
+    method: GET
+    url: `/gopro/webcam/exit`
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/exit"
+requests.request("GET", url)
+```
+
+### Get Webcam Status
+    method: GET
+    url: `/gopro/webcam/status`
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/status"
+response = requests.request("GET", url)
+print(response.text)
+```
+
+### Get Webcam Version
+    method: GET
+    url: `/gopro/webcam/version`
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/version"
+response = requests.request("GET", url)
+print(response.text)
+```
+
+### Start Webcam
+    method: GET
+    url: `/gopro/webcam/start`
+    parameters:
+        res: [4, 7, 12]
+        fov: [0, 2-4]
+        port
+        protocol: ["RTSP", "TS"]
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/start"
+querystring = {"res":"12","fov":"0","port":"8556","protocol":"RTSP"}
+requests.request("GET", url, params=querystring)
+```
+
+### Stop Webcam
+    method: GET
+    url: `/gopro/webcam/stop`
+    Responses: 200
+
+``` Python
+import requests
+
+url = "http://172.27.199.51:8080/gopro/webcam/stop"
+requests.request("GET", url)
+```
 

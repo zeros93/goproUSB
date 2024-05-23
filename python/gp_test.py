@@ -126,3 +126,51 @@ print("GPS (83)")
 url = base_url + "/gopro/camera/setting?setting=83&option=0"
 response = requests.request("GET", url)
 print(response)
+
+# HindSight (167)
+print("HindSight (167)")
+url = base_url + "/gopro/camera/setting?setting=167&option=2"
+response = requests.request("GET", url)
+print(response)
+
+# Max Lens (162)
+print("Max Lens (162)")
+url = base_url + "/gopro/camera/setting?setting=162&option=0"
+response = requests.request("GET", url)
+print(response)
+
+# Setup Anti-Flicker (134)
+print("Setup Anti-Flicker (134)")
+url = base_url + "/gopro/camera/setting?setting=134&option=2"
+response = requests.request("GET", url)
+print(response)
+
+# Video Resolution (2)
+print("Video Resolution (2)")
+url = base_url + "/gopro/camera/setting?setting=2&option=1"
+response = requests.request("GET", url)
+print(response)
+
+# Enter Webcam Preview
+print("Enter Webcam Preview")
+url = base_url + "/gopro/webcam/preview"
+response = requests.request("GET", url)
+print(response)
+
+# Get Webcam Status
+print("Get Webcam Status")
+url = base_url + "/gopro/webcam/status"
+response = requests.request("GET", url)
+print(response.text)
+
+# Get Webcam Version
+print("Get Webcam Version")
+url = base_url + "/gopro/webcam/version"
+response = requests.request("GET", url)
+print(response.text)
+
+# Exit Webcam Mode
+print("Exit Webcam Mode")
+url = base_url + "/gopro/webcam/exit"
+response = requests.request("GET", url)
+print(response)
