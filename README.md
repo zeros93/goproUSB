@@ -59,6 +59,13 @@ $ sudo ifconfig enp0s20f0u2 down
 $ sudo ifconfig enp0s20f0u2 172.27.199.55 up
 ```
 
+python에서 GoPro 접속 여부 확인
+``` Python
+import subprocess
+result = subprocess.run(['bash', './usb_to_ether.sh'], check=False)
+result.returncode
+```
+
 ## GoPro camera 데이터 확인
 Ubuntu shell에서 `wget`과 `cat` 명령으로 camera 정보 확인
 ```

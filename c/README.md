@@ -1,6 +1,7 @@
 
 ### Requirement library
-- libcurl-openssl1.0-dev
+- ubuntu 18.04: libcurl-openssl1.0-dev
+- Debian Buster (BBB 2020-04-06): libcurl4-openssl-dev
 
 ### Compile
 ``` sh
