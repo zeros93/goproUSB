@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+split_jpeg/split_jpeg
+
 # Distribution / packaging
 .Python
 build/
