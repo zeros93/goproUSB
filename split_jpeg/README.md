@@ -3,6 +3,13 @@
 - ubuntu 18.04: libjpeg-dev
 - Debian Buster (BBB 2020-04-06): 
 
+### 분한할 이미지 갯수 수정
+split_jpeg.c file의 define 부분에서 원하는 Row, Col 수를 지정
+``` c
+#define BLOCK_COLS  3   // Change this if you want a different columns
+#define BLOCK_ROWS  2   // Change this if you want a different rows
+```
+
 ### Compile
 ``` sh
 gcc -o split_jpeg split_jpeg.c -ljpeg

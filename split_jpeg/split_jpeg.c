@@ -2,15 +2,15 @@
 #include <stdlib.h>
 #include <jpeglib.h>
 
-#define BLOCK_WIDTH  3 // Change this if you want a different block size
-#define BLOCK_HEIGHT 2 // Change this if you want a different block size
+#define BLOCK_COLS  3   // Change this if you want a different columns
+#define BLOCK_ROWS  2   // Change this if you want a different rows
 
 void write_subimage(unsigned char *image, int width, int height, const char *prefix) {
-    int sub_width  = width  / BLOCK_WIDTH;
-    int sub_height = height / BLOCK_HEIGHT;
+    int sub_width  = width  / BLOCK_COLS;
+    int sub_height = height / BLOCK_ROWS;
     int x, y;
 
-    for (int i = 0; i < BLOCK_WIDTH * BLOCK_HEIGHT; ++i) {
+    for (int i = 0; i < BLOCK_COLS * BLOCK_ROWS; ++i) {
         char filename[100];
         sprintf(filename, "%s_%d.jpg", prefix, i);
         FILE *outfile = fopen(filename, "wb");
@@ -35,8 +35,8 @@ void write_subimage(unsigned char *image, int width, int height, const char *pre
         JSAMPROW row_pointer[1];
         row_pointer[0] = (JSAMPROW)malloc(3 * sub_width * sizeof(JSAMPLE));
 
-        int row_offset = (i / BLOCK_WIDTH) * sub_height;
-        int col_offset = (i % BLOCK_WIDTH) * sub_width;
+        int row_offset = (i / BLOCK_COLS) * sub_height;
+        int col_offset = (i % BLOCK_COLS) * sub_width;
 
         for (y = 0; y < sub_height; ++y) {
             for (x = 0; x < sub_width; ++x) {
