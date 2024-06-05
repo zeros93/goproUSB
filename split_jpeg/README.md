@@ -9,13 +9,11 @@ gcc -o split_jpeg split_jpeg.c -ljpeg
 ```
 
 ### 원본 이미지
-<img src="./moon.jpg" width="480">
-
-<sub> [이미지 출처] https://cdn.pixabay.com/photo/2021/06/26/06/52/moon-6365467_960_720.jpg </sub>
+<img src="./keyboard.jpg" width="960">
 
 ### 실행
 ``` sh
-./split_jpeg moon.jpg
+./split_jpeg keyboard.jpg
 ```
 
 ### 분할된 이미지
