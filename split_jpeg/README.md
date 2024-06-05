@@ -17,5 +17,5 @@ gcc -o split_jpeg split_jpeg.c -ljpeg
 ```
 
 ### 분할된 이미지
-<img src="./output_0.jpg"> <img src="./output_1.jpg"> <img src="./output_2.jpg">
-<img src="./output_3.jpg"> <img src="./output_4.jpg"> <img src="./output_5.jpg">
+<img src="./output_0.jpg" width="320"> <img src="./output_1.jpg" width="320"> <img src="./output_2.jpg" width="320">
+<img src="./output_3.jpg" width="320"> <img src="./output_4.jpg" width="320"> <img src="./output_5.jpg" width="320">
